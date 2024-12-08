@@ -3,7 +3,7 @@ import SearchBar from './components/SearchBar';
 import FilterSection from './components/FilterSection';
 import ResultsList from './components/ResultsList';
 import Pagination from './components/Pagination';
-import Footer from './components/Footer'; // Import the Footer component
+import Footer from './components/Footer'; 
 import dummyData from './data/dummyData';
 import './App.css';
 
@@ -69,7 +69,7 @@ const App = () => {
           currentPage={currentPage}
         />
       </div>
-      <Footer /> {/* Add Footer component here */}
+      <Footer /> 
     </div>
   );
 };

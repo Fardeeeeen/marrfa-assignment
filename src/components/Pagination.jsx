@@ -26,7 +26,7 @@ const Pagination = ({ totalResults, resultsPerPage, onPageChange, currentPage })
               currentPage === number || hoveredPage === number
                 ? '0 4px 8px rgba(0, 0, 0, 0.2)'
                 : 'none',
-            transform: hoveredPage === number ? 'scale(1.05)' : 'scale(1)', // Enlarge on hover
+            transform: hoveredPage === number ? 'scale(1.05)' : 'scale(1)', 
           }}
         >
           {number}
@@ -50,7 +50,7 @@ const styles = {
     cursor: 'pointer',
     fontWeight: 'bold',
     fontSize: '16px',
-    transition: 'transform 0.2s ease, box-shadow 0.2s ease', // Smooth transition for hover effect
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease', 
   },
 };
 

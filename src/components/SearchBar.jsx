@@ -23,10 +23,10 @@ const SearchBar = ({ onSearch }) => {
 
 const styles = {
   searchBar: {
-    flex: 1, // Allow it to take up available space within the flex container
+    flex: 1,
   },
   input: {
-    width: '100%', // Full width of the parent container
+    width: '100%', 
     padding: '10px',
     fontSize: '16px',
     borderRadius: '4px',
