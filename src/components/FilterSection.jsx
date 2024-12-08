@@ -26,20 +26,19 @@ const FilterSection = ({ onFilter }) => {
 
   return (
     <div className="search-filter-container">
-      {/* Filters button with updated styling */}
       <button
         style={{
           marginTop: '10px',
           padding: '10px 20px',
-          background: 'linear-gradient(90deg, var(--gradient1), var(--dark-blue))', // Gradient background
+          background: 'linear-gradient(90deg, var(--gradient1), var(--dark-blue))', 
           color: '#fff',
           border: 'none',
-          borderRadius: '30px', // Rounded corners
+          borderRadius: '30px', 
           cursor: 'pointer',
           textAlign: 'center',
           fontWeight: 'bold',
-          fontSize: '16px', // Larger font size
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Add slight shadow
+          fontSize: '16px',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', 
           width: '150px',
         }}
         onClick={toggleDropdown}
@@ -50,18 +49,21 @@ const FilterSection = ({ onFilter }) => {
       {isDropdownOpen && (
         <div
           style={{
-            position: 'absolute',
-            top: '48%',
             zIndex: 1000,
-            backgroundColor: '#fff',
-            border: '1px solid #ddd',
-            borderRadius: '4px',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
             padding: '10px',
-            width: '200px',
+            display: 'flex',
+            justifyContent:'center',
+            alignItems: 'center',
+            gap:'30px',
           }}
         >
-          <div>
+          <div
+            style={{
+              display:'flex',
+              gap:'50px',
+              flexWrap:'wrap',
+            }}
+          >
             {['Technology', 'Lifestyle', 'Design', 'Business', 'Health', 'Science'].map((category) => (
               <label key={category} style={{ display: 'block', marginBottom: '8px' }}>
                 <input
@@ -87,7 +89,6 @@ const FilterSection = ({ onFilter }) => {
               fontWeight: 'bold',
               fontSize: '16px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-              width: '100%',
             }}
             onClick={clearFilters}
           >
